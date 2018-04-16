@@ -112,20 +112,20 @@ set cpo&vim
 " Default bindings
 
 if !hasmapto('<Plug>MarkSet', 'n')
-	nmap <unique> <silent> <leader>m <Plug>MarkSet
+	nmap <unique> <silent> <F8> <Plug>MarkSet
 endif
 if !hasmapto('<Plug>MarkSet', 'v')
-	vmap <unique> <silent> <leader>m <Plug>MarkSet
+	vmap <unique> <silent> <F8> <Plug>MarkSet
 endif
-if !hasmapto('<Plug>MarkRegex', 'n')
-	nmap <unique> <silent> <leader>r <Plug>MarkRegex
-endif
-if !hasmapto('<Plug>MarkRegex', 'v')
-	vmap <unique> <silent> <leader>r <Plug>MarkRegex
-endif
-if !hasmapto('<Plug>MarkClear', 'n')
-	nmap <unique> <silent> <leader>n <Plug>MarkClear
-endif
+"if !hasmapto('<Plug>MarkRegex', 'n')
+"	nmap <unique> <silent> <leader>r <Plug>MarkRegex
+"endif
+"if !hasmapto('<Plug>MarkRegex', 'v')
+"	vmap <unique> <silent> <leader>r <Plug>MarkRegex
+"endif
+"if !hasmapto('<Plug>MarkClear', 'n')
+"	nmap <unique> <silent> <leader>n <Plug>MarkClear
+"endif
 
 nnoremap <silent> <Plug>MarkSet   :call
 	\ <sid>MarkCurrentWord()<cr>
