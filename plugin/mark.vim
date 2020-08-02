@@ -85,18 +85,18 @@ endfunction
 " default colors/groups
 " you may define your own colors in you vimrc file, in the form as below:
 if &t_Co < 256
-	hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=Yellow
-	hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=Green
-	hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=Magenta
-	hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=Cyan
-	hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=Blue
-else
-	exec "hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=".s:RGB(5,4,0)
-	exec "hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=".s:RGB(1,4,0)
-	exec "hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=".s:RGB(3,0,5)
-	exec "hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=".s:RGB(0,4,5)
-	exec "hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=".s:RGB(0,2,5)
-endif
+     hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=Yellow
+     hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=Green
+     hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=Magenta
+     hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=Cyan
+     hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=Blue
+ else
+     exec "hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=".s:RGB(5,4,0)
+     exec "hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=".s:RGB(1,4,0)
+     exec "hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=".s:RGB(3,0,5)
+     exec "hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=".s:RGB(0,4,5)
+     exec "hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=".s:RGB(0,2,5)
+ endif
 
 " Anti reinclusion guards
 if exists('g:loaded_mark') && !exists('g:force_reload_mark')
