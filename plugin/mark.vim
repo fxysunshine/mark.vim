@@ -91,11 +91,27 @@ if &t_Co < 256
      hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=Cyan
      hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=Blue
  else
-     exec "hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=".s:RGB(5,4,0)
-     exec "hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=".s:RGB(1,4,0)
-     exec "hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=".s:RGB(3,0,5)
-     exec "hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=".s:RGB(0,4,5)
-     exec "hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=".s:RGB(0,2,5)
+"     exec "hi MarkWord1 guifg=Black ctermfg=Black guibg=#FFD700 ctermbg=".s:RGB(5,4,0)
+"     exec "hi MarkWord2 guifg=Black ctermfg=Black guibg=#5FD700 ctermbg=".s:RGB(1,4,0)
+"     exec "hi MarkWord3 guifg=White ctermfg=White guibg=#AF00FF ctermbg=".s:RGB(3,0,5)
+"     exec "hi MarkWord4 guifg=Black ctermfg=Black guibg=#00D7FF ctermbg=".s:RGB(0,4,5)
+"     exec "hi MarkWord5 guifg=White ctermfg=White guibg=#0087FF ctermbg=".s:RGB(0,2,5)
+     exec "hi MarkWord1   ctermbg=Blue         ctermfg=Black guibg=#A1B7FF  guifg=#001E80"
+     exec "hi MarkWord2   ctermbg=Magenta      ctermfg=Black guibg=#FFA1C6  guifg=#80005D"
+     exec "hi MarkWord3   ctermbg=Green        ctermfg=Black guibg=#ACFFA1  guifg=#0F8000"
+     exec "hi MarkWord4   ctermbg=Yellow       ctermfg=Black guibg=#FFE8A1  guifg=#806000"
+     exec "hi MarkWord5   ctermbg=Cyan         ctermfg=Black guibg=#A1FEFF  guifg=#007F80"
+     exec "hi MarkWord6   ctermbg=DarkMagenta  ctermfg=Black guibg=#A29CCF  guifg=#120080"
+     exec "hi MarkWord7  ctermbg=DarkGreen    ctermfg=White guibg=#00FF00  guifg=#355F35"
+     exec "hi MarkWord8  ctermbg=White        ctermfg=Gray  guibg=#E3E3D2  guifg=#999999"
+     exec "hi MarkWord9  ctermbg=Blue         ctermfg=White guibg=#0000FF  guifg=#F0F0FF"
+     exec "hi MarkWord10  ctermbg=Brown        ctermfg=Black guibg=#FFC4A1  guifg=#803000"
+     exec "hi MarkWord11  ctermbg=Red          ctermfg=Black guibg=#F3FFA1  guifg=#6F8000"
+     exec "hi MarkWord12 ctermbg=Gray         ctermfg=Black guibg=#A3A396  guifg=#222222"
+     exec "hi MarkWord13  ctermbg=DarkBlue     ctermfg=Black guibg=#A1DBFF  guifg=#004E80"
+     exec "hi MarkWord14 ctermbg=DarkRed      ctermfg=White guibg=#FF0000  guifg=#FFFFFF"
+     exec "hi MarkWord15  ctermbg=DarkYellow   ctermfg=White guibg=#FFFF00  guifg=#6F6F4C"
+     exec "hi MarkWord16  ctermbg=DarkCyan     ctermfg=Black guibg=#D2A1FF  guifg=#420080"
  endif
 
 " Anti reinclusion guards
